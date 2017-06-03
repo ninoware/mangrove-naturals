@@ -1,0 +1,219 @@
+<table width="100%;">
+<tbody>
+<tr>
+<td style="width: 50%; border: #ffffff; align: center;">
+<div id="product-component-b52b399c3e2"></div>
+<script type="text/javascript">// <![CDATA[
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'mangrove-naturals.myshopify.com',
+      apiKey: 'a8af56b630a425d6015a7cfcac134925',
+      appId: '6',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [1560004163],
+        node: document.getElementById('product-component-b52b399c3e2'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "variantId": "all",
+    "width": "240px",
+    "contents": {
+      "imgWithCarousel": false,
+      "variantTitle": false,
+      "description": false,
+      "buttonWithQuantity": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "background-color": "#e9c591",
+        "color": "#000000",
+        ":hover": {
+          "background-color": "#d2b183",
+          "color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#d2b183"
+        }
+      },
+      "compareAt": {
+        "font-size": "12px"
+      }
+    }
+  },
+  "cart": {
+    "contents": {
+      "button": true
+    },
+    "styles": {
+      "button": {
+        "background-color": "#e9c591",
+        "color": "#000000",
+        ":hover": {
+          "background-color": "#d2b183",
+          "color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#d2b183"
+        }
+      },
+      "footer": {
+        "background-color": "#ffffff"
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "variantTitle": false,
+      "buttonWithQuantity": true,
+      "button": false,
+      "quantity": false
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "background-color": "#e9c591",
+        "color": "#000000",
+        ":hover": {
+          "background-color": "#d2b183",
+          "color": "#000000"
+        },
+        ":focus": {
+          "background-color": "#d2b183"
+        }
+      }
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#e9c591",
+        ":hover": {
+          "background-color": "#d2b183"
+        },
+        ":focus": {
+          "background-color": "#d2b183"
+        }
+      },
+      "count": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "iconPath": {
+        "fill": "#000000"
+      }
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  }
+}
+      });
+    });
+  }
+})();
+// ]]></script></td>
+<td style="width: 50%; border: #ffffff;"> 
+<h2><span style="color: #720f41;">Also available in Whole Foods across the DC Metro Area</span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<h3><span style="color: #720f41;">Maryland</span></h3>
+<table style="width: 100%;">
+<tbody bordercolor="#ffffff">
+<tr>
+<td style="width: 33%;" bordercolor="#ffffff">
+<p><em><strong>Friendship Heights</strong></em></p>
+<p>4420 Willard Ave<br />Chevy Chase, MD 20815<br />301-657-1520</p>
+</td>
+<td style="width: 33%;" bordercolor="#ffffff"> 
+<p><strong><em>Kentlands </em></strong></p>
+<p>Kentlands Square<br />316 Kentlands Blvd<br />Gaithersburg, MD 20878<br />301-258-9500</p>
+</td>
+<td style="width: 33%;" bordercolor="#ffffff">
+<p><strong><em>Rockville </em></strong></p>
+<p>11355 Woodglen Dr<br />Rockville, MD 20852<br />301-984-4880</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3><span style="color: #720f41;">Virginia</span></h3>
+<table width="100%">
+<tbody>
+<tr>
+<td width="50%"> 
+<p><em><strong>Old Town Alexandria </strong></em></p>
+<p>Duke Street Plaza<br />1700 Duke St<br />Alexandria, VA 22314<br />703-706-0891</p>
+</td>
+<td width="50%">
+<p><strong><em>Vienna </em></strong></p>
+<p>143 Maple Ave E<br />Vienna, VA 22180<br />703-319-2000</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3><span style="color: #720f41;">Washington, DC</span></h3>
+<table width="100%">
+<tbody>
+<tr>
+<td width="50%"> 
+<p><em><strong>Tentleytown</strong></em></p>
+<p>4500 Wisconsin Avenue Shopping Center<br />4530 40th St NW<br />Washington, DC 20016<br />202-237-5800</p>
+</td>
+<td width="50%">
+<p><strong><em>Foggy Bottom </em></strong></p>
+<p>2201 I St NW<br />Washington, DC 20037<br />202-296-1660</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p> </p>
